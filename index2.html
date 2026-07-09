@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./imeges/image.png" />
+    <link rel="stylesheet" href="./script.js" />
+    <title>AquaWash | Premium Car Care</title>
+  </head>
+
+  <body class="bg-blue-950">
+    <header
+      class="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 backdrop-blur-xl border-b border-white/15 z-50 shadow-[0_8px_32px_0_rgba(0,200,255,0.1)]"
+    >
+      <div class="flex items-center gap-4">
+        <img class="w-10" src="./imeges/droplet.svg" alt="" />
+        <h1 class="text-blue-500 text-3xl font-bold">AquaWash</h1>
+      </div>
+
+      <ul class="hidden md:flex gap-8">
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a class="text-blue-400 font-bold" href="./index1.html">Services</a>
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold animate-pulse"
+            href="./index2.html"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index3.html"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a class="text-blue-400 hover:text-white font-bold" href="./index4.html"
+            >Booking</a
+          >
+        </li>
+         <li>
+          <a class="text-blue-400 hover:text-white font-bold" href="./index5.html">Registration</a>
+        </li>
+      </ul>
+      <button
+        class="hidden md:block font-bold text-blue-200 border-2 border-blue-500 px-5 py-2 rounded-3xl bg-blue-500 hover:bg-blue-800 hover:text-white transition"
+      >
+        BOOK NOW
+      </button>
+
+      <button id="menuBtn" class="md:hidden">
+        <img src="./imeges/menu (1).svg" class="w-8" alt="" />
+      </button>
+    </header>
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 invisible transition duration-300 z-40"
+    ></div>
+    <div
+      id="mobileMenu"
+      class="fixed top-0 right-0 h-full w-80 bg-white/10 backdrop-blur-3xl border-l border-white/20 shadow-2xl translate-x-full transition-transform duration-500 ease-in-out z-50"
+    >
+      <div
+        class="flex items-center justify-between p-6 border-b border-white/20"
+      >
+        <h1 class="text-cyan-400 font-bold text-2xl">AquaWash</h1>
+
+        <button
+          id="closeBtn"
+          class="text-white text-4xl hover:rotate-90 duration-300"
+        >
+          &times;
+        </button>
+      </div>
+
+      <ul class="flex flex-col gap-4 p-6">
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index.html"
+        >
+          🏠 Home
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index1.html"
+        >
+          🚗 Services
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index2.html"
+        >
+          🚘 Gallery
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index3.html"
+        >
+          💰 Pricing
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index4.html"
+        >
+          ℹ About
+        </a>
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="/index4.html"
+          href=""
+          >Registration</a
+        >
+      </ul>
+
+      <div class="px-6 mt-6">
+        <button
+          class="w-full py-4 rounded-full bg-blue-500 from-cyan-500 to-blue-600 text-white font-bold hover:scale-105 transition"
+        >
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("overlay");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+        overlay.classList.remove("opacity-0", "invisible");
+      });
+
+      function closeMenu() {
+        mobileMenu.classList.add("translate-x-full");
+        overlay.classList.add("opacity-0", "invisible");
+      }
+
+      closeBtn.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+    </script>
+    <section>
+      <div class="pt-30 text-center">
+        <h1 class="text-blue-400 text-5xl font-bold">
+          Precision in Every Drop
+        </h1>
+        <p class="text-gray-400 pt-2">
+          Explore our portfolio of premium detailing excellence. From
+          high-clarity ceramic <br />
+          coatings to meticulous interior restoration.
+        </p>
+      </div>
+    </section>
+    <section class="py-10 px-5 justify-center">
+      <div class="w-full grid grid-cols-4 gap-5">
+        <div
+          class="col-span-2 row-span-2 relative h-160 overflow-hidden rounded-2xl"
+        >
+          <img
+            src="imeges/image copy 11.png"
+            class="w-full h-full object-cover"
+          />
+
+          <div class="inset-0 from-black/80"></div>
+
+          <div class="absolute bottom-8 left-8">
+            <span class="bg-cyan-500 text-white text-sm px-3 py-1 rounded-full">
+              Ceramic Pro
+            </span>
+
+            <h2 class="text-white text-4xl font-bold mt-4">
+              The Hydrophobic Shield
+            </h2>
+          </div>
+        </div>
+        <div class="h-75 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 12.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-75 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 14.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-75 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 13.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-75 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 15.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="pt-5 w-full grid grid-cols-2 gap-5">
+        <div class="relative h-100 overflow-hidden rounded-2xl w-185">
+          <img
+            src="imeges/image copy 16.png"
+            class="w-full h-full object-cover"
+          />
+
+          <div class="inset-0 from-black/80"></div>
+
+          <div class="absolute bottom-8 left-8">
+            <h2 class="text-white text-4xl font-bold mt-4">
+              Elite Collections
+            </h2>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="h-100 rounded-2xl overflow-hidden">
+            <img
+              src="imeges/image copy 17.png"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="h-100 rounded-2xl overflow-hidden">
+            <img
+              src="imeges/image copy 18.png"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 pt-5">
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 19.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 20.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 21.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 22.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="flex gap-4 pt-5">
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 23.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 24.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 25.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 26.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="flex gap-4 pt-5">
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 27.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 28.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 29.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-90 rounded-2xl overflow-hidden">
+          <img
+            src="imeges/image copy 30.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="justify-center flex">
+        <button
+          class="pl-14 p-4 rounded-2xl border border-[#2E537A] bg-[#123B66] text-[#66D9FF] text-2xl hover:bg-[#174978] hover:border-[#4D7DB0] hover:text-[#8CE8FF]"
+        >
+          Load More Projects
+        </button>
+      </div>
+    </section>
+     <footer>
+      <div class="bg-blue-950 w-full h-95">
+        <div class="flex gap-50 justify-center pt-30 max-sm:flex-wrap">
+          <div>
+            <div class="flex items-center gap-5">
+              <img class="w-10" src="./imeges/droplet.svg" alt="" />
+              <h1 class="text-blue-500 text-4xl font-bold">AquaWash</h1>
+            </div>
+            <p class="text-gray-500 pt-4">
+              Setting the standard for high-end vehicle <br />
+              maintenance through innovation and <br />
+              dedication.
+            </p>
+            <div class="flex gap-5 items-center pt-5">
+              <img src="./imeges/globe.svg" alt="" />
+              <img src="./imeges/share-2.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="font-bold text-white text-2xl">CONNECT</h1>
+              <p class="text-gray-500"><a href="https://ru-ru.facebook.com/AquawashLtd">Facebook</a></p>
+              <p class="text-gray-500"><a href="https://www.instagram.com/aquawashltd/">Instagram</a></p>
+              <p class="text-gray-500"><a href="https://x.com/AquaSecTeam">Twitter</a></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="font-bold text-white text-2xl">SUPPORT</h1>
+              <p class="text-gray-500">
+                <a href="telPhone:+1(555)AQUA-WSH">Phone: +1 (555) AQUA-WSH</a>
+              </p>
+              <p class="text-gray-500">
+                <a href="">Email: hello@aquawash.com</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="font-bold text-white text-2xl">Location</h1>
+              <p class="text-gray-500">
+                123 Hydro Lane, Fluid City <br />
+                State of Flow, 90210
+              </p>
+              <div class="pt-5">
+                <img
+                  class="w-50 rounded-2xl opacity-30 hover:opacity-100"
+                  src="./imeges/image copy 3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-200 justify-center pt-5">
+          <p class="text-gray-500">
+            © 2024 AquaWash Premium Car Care. All rights reserved.
+          </p>
+          <div class="flex gap-5 items-center">
+            <p class="text-gray-500 hover:text-blue-400">Privacy Policy</p>
+            <p class="text-gray-500 hover:text-blue-400">Terms of Service</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

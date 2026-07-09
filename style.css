@@ -1,0 +1,21 @@
+.bacrandimeg{
+  width: 1521px;
+  height: 900px;
+}
+.a1 {
+  background-image: url(./imeges/image\ copy.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.a2{
+  background-image: url(./imeges/image\ copy\ 2.png);
+  width: 900px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}

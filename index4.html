@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./imeges/image.png" />
+    <link rel="stylesheet" href="./script.js" />
+    <title>AquaWash | Premium Car Care</title>
+  </head>
+
+  <body class="bg-blue-950">
+    <header
+      class="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 backdrop-blur-xl border-b border-white/15 z-50 shadow-[0_8px_32px_0_rgba(0,200,255,0.1)]"
+    >
+      <div class="flex items-center gap-4">
+        <img class="w-10" src="./imeges/droplet.svg" alt="" />
+        <h1 class="text-blue-500 text-3xl font-bold">AquaWash</h1>
+      </div>
+
+      <ul class="hidden md:flex gap-8">
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a class="text-blue-400 font-bold" href="./index1.html">Services</a>
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index2.html"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index3.html"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold animate-pulse"
+            href="./index4.html"
+            >Booking</a
+          >
+        </li>
+         <li>
+          <a class="text-blue-400 hover:text-white font-bold" href="./index5.html">Registration
+        </li>
+      </ul>
+      <button
+        class="hidden md:block font-bold text-blue-200 border-2 border-blue-500 px-5 py-2 rounded-3xl bg-blue-500 hover:bg-blue-800 hover:text-white transition"
+      >
+        BOOK NOW
+      </button>
+
+      <button id="menuBtn" class="md:hidden">
+        <img src="./imeges/menu (1).svg" class="w-8" alt="" />
+      </button>
+    </header>
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 invisible transition duration-300 z-40"
+    ></div>
+    <div
+      id="mobileMenu"
+      class="fixed top-0 right-0 h-full w-80 bg-white/10 backdrop-blur-3xl border-l border-white/20 shadow-2xl translate-x-full transition-transform duration-500 ease-in-out z-50"
+    >
+      <div
+        class="flex items-center justify-between p-6 border-b border-white/20"
+      >
+        <h1 class="text-cyan-400 font-bold text-2xl">AquaWash</h1>
+
+        <button
+          id="closeBtn"
+          class="text-white text-4xl hover:rotate-90 duration-300"
+        >
+          &times;
+        </button>
+      </div>
+
+      <ul class="flex flex-col gap-4 p-6">
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index.html"
+        >
+          🏠 Home
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index1.html"
+        >
+          🚗 Services
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index2.html"
+        >
+          🚘 Gallery
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index3.html"
+        >
+          💰 Pricing
+        </a>
+
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="/index4.html"
+        >
+          ℹ Booking
+        </a>
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="/index4.html"
+          href=""
+          >Registration</a
+        >
+      </ul>
+
+      <div class="px-6 mt-6">
+        <button
+          class="w-full py-4 rounded-full bg-blue-500 from-cyan-500 to-blue-600 text-white font-bold hover:scale-105 transition"
+        >
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("overlay");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+        overlay.classList.remove("opacity-0", "invisible");
+      });
+
+      function closeMenu() {
+        mobileMenu.classList.add("translate-x-full");
+        overlay.classList.add("opacity-0", "invisible");
+      }
+
+      closeBtn.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+    </script>
+    <section>
+      <div class="text-center justify-center pt-30">
+        <p class="text-blue-500 font-bold text-2xl">Premium Care Packages</p>
+        <h1 class="pt-2 text-5xl text-white font-bold">
+          Choose Your Level of Purity
+        </h1>
+        <p class="text-gray-400 text-xl pt-2">
+          From quick refreshes to full showroom restoration, discover the
+          perfect <br />
+          maintenance plan for your high-performance vehicle.
+        </p>
+      </div>
+    </section>
+    <section class="pt-30 flex justify-center">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-10 w-full">
+        <div
+          class="bg-[#081c38] border border-[#183454] rounded-2xl p-8 text-white"
+        >
+          <h2 class="text-3xl font-bold text-slate-200">Basic</h2>
+
+          <div class="flex items-end mt-3">
+            <span class="text-5xl font-bold text-cyan-300">$29</span>
+            <span class="text-slate-400 mb-2 ml-1">/wash</span>
+          </div>
+
+          <p class="text-slate-300 mt-2">Perfect for weekly maintenance.</p>
+
+          <ul class="mt-8 text-slate-300">
+            <li>High-pressure exterior wash</li>
+            <li>Wheel & Rim cleaning</li>
+            <li>Tire shine application</li>
+            <li>Hand dry finish</li>
+          </ul>
+
+          <div
+            class="border-t border-[#17304f] mt-10 pt-6 flex justify-between items-center"
+          >
+            <span class="text-slate-300"> Duration: 20 mins </span>
+
+            <button
+              class="border border-cyan-400 rounded-lg px-6 py-2 text-cyan-300 hover:bg-cyan-400 hover:text-black transition"
+            >
+              Select
+            </button>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#0a2245] border-2 border-cyan-400/50 rounded-2xl p-8 text-white shadow-xl"
+        >
+          <span
+            class="absolute 9 right-5 bg-cyan-400 text-[#05203c] text-xs font-bold px-4 py-1 rounded-full"
+          >
+            MOST POPULAR
+          </span>
+
+          <h2 class="text-3xl font-bold text-cyan-200">Premium</h2>
+
+          <div class="flex items-end mt-3">
+            <span class="text-5xl font-bold text-cyan-300">$59</span>
+            <span class="text-slate-400 mb-2 ml-1">/wash</span>
+          </div>
+
+          <p class="text-slate-300 mt-2">Deep cleaning for daily drivers.</p>
+
+          <ul class="mt-8 text-slate-200">
+            <li>Everything in Basic</li>
+            <li>Interior vacuum & Dusting</li>
+            <li>Windows inside & out</li>
+            <li>Triple foam wax protection</li>
+            <li>Dashboard UV protection</li>
+          </ul>
+
+          <div
+            class="border-t border-[#20456b] mt-10 pt-6 flex justify-between items-center"
+          >
+            <span class="text-slate-300">
+              Duration:<br />
+              45 mins
+            </span>
+
+            <button
+              class="bg-blue-500 from-cyan-400 to-cyan-600 text-[#05203c] font-bold px-10 py-4 rounded-xl hover:scale-105 transition"
+            >
+              Get Premium
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-[#081c38] border border-[#183454] rounded-2xl p-8 text-white"
+        >
+          <h2 class="text-3xl font-bold text-slate-200">VIP Platinum</h2>
+
+          <div class="flex items-end mt-3">
+            <span class="text-5xl font-bold text-cyan-300">$129</span>
+            <span class="text-slate-400 mb-2 ml-1">/wash</span>
+          </div>
+
+          <p class="text-slate-300 mt-2">Ultimate care for elite vehicles.</p>
+
+          <ul class="mt-8 text-slate-300">
+            <li>Full Premium Service</li>
+            <li>Ceramic sealant coating</li>
+            <li>Leather conditioning treatment</li>
+            <li>Engine bay detailing</li>
+            <li>Anti-fog glass treatment</li>
+          </ul>
+
+          <div
+            class="border-t border-[#17304f] mt-10 pt-6 flex justify-between items-center"
+          >
+            <span class="text-slate-300"> Duration: 90 mins </span>
+
+            <button
+              class="border border-cyan-400 rounded-lg px-6 py-2 text-cyan-300 hover:bg-cyan-400 hover:text-black transition"
+            >
+              Select
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-10">
+      <div>
+        <h1 class="text-white font-bold text-5xl text-center pb-10">
+          Detailed Comparison
+        </h1>
+      </div>
+      <div
+        class="w-full bg-[#081c38] rounded-2xl overflow-hidden border border-[#173454] text-white"
+      >
+        <div
+          class="grid grid-cols-4 bg-[#173354] py-5 px-6 font-bold text-slate-200"
+        >
+          <div>Feature</div>
+          <div class="text-center">Basic</div>
+          <div class="text-center text-cyan-300">Premium</div>
+          <div class="text-center">VIP Platinum</div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6 border-b border-[#16304f]">
+          <div class="text-slate-300">High Pressure Exterior Wash</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6 border-b border-[#16304f]">
+          <div class="text-slate-300">Wheel & Tire Detailing</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6 border-b border-[#16304f]">
+          <div class="text-slate-300">Interior Vacuum & Dusting</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6 border-b border-[#16304f]">
+          <div class="text-slate-300">Window Crystal Clear Coating</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6 border-b border-[#16304f]">
+          <div class="text-slate-300">Ceramic Sealant (3-Month Protect)</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6 border-b border-[#16304f]">
+          <div class="text-slate-300">Leather Deep Conditioning</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+        <div class="grid grid-cols-4 px-6 py-6">
+          <div class="text-slate-300">Engine Steam Cleaning</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-slate-400 text-xl">-</div>
+          <div class="text-center text-cyan-300 text-xl"></div>
+        </div>
+      </div>
+    </section>
+    <section class="p-10">
+      <div class="flex bg-[#0d2347] rounded-3xl overflow-hidden">
+        <div class="w-1/2 p-10 flex flex-col justify-center">
+          <h2 class="text-5xl font-bold text-white">
+            Need a <span class="text-cyan-400">Custom</span><br />
+            Solution?
+          </h2>
+
+          <p class="text-gray-300 mt-6">
+            For fleet owners or luxury collectors with unique requirements, we
+            offer bespoke detailing schedules and multi-vehicle discounts.
+          </p>
+
+          <div class="flex gap-4 mt-8">
+            <button class="bg-cyan-500 px-6 py-3 rounded-xl text-white">
+              Contact Sales
+            </button>
+
+            <button
+              class="border border-gray-500 px-6 py-3 rounded-xl text-white"
+            >
+              Explore Gallery
+            </button>
+          </div>
+        </div>
+        <div class="w-200">
+          <img
+            src="./imeges/image copy 31.png"
+            class="w-full h-full rounded-4xl"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-blue-920 w-full h-95">
+        <hr>
+        <div class="flex gap-50 justify-center pt-30 max-sm:flex-wrap">
+          <div>
+            <div class="flex items-center gap-5">
+              <img class="w-10" src="./imeges/droplet.svg" alt="" />
+              <h1 class="text-blue-500 text-4xl font-bold">AquaWash</h1>
+            </div>
+            <p class="text-gray-500 pt-4">
+              Setting the standard for high-end vehicle <br />
+              maintenance through innovation and <br />
+              dedication.
+            </p>
+            <div class="flex gap-5 items-center pt-5">
+              <img src="./imeges/globe.svg" alt="" />
+              <img src="./imeges/share-2.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="font-bold text-white text-2xl">CONNECT</h1>
+              <p class="text-gray-500"><a href="https://ru-ru.facebook.com/AquawashLtd">Facebook</a></p>
+              <p class="text-gray-500"><a href="https://www.instagram.com/aquawashltd/">Instagram</a></p>
+              <p class="text-gray-500"><a href="https://x.com/AquaSecTeam">Twitter</a></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="font-bold text-white text-2xl">SUPPORT</h1>
+              <p class="text-gray-500">
+                <a href="telPhone:+1(555)AQUA-WSH">Phone: +1 (555) AQUA-WSH</a>
+              </p>
+              <p class="text-gray-500">
+                <a href="">Email: hello@aquawash.com</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="font-bold text-white text-2xl">Location</h1>
+              <p class="text-gray-500">
+                123 Hydro Lane, Fluid City <br />
+                State of Flow, 90210
+              </p>
+              <div class="pt-5">
+                <img
+                  class="w-50 rounded-2xl opacity-30 hover:opacity-100"
+                  src="./imeges/image copy 3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-200 justify-center pt-5">
+          <p class="text-gray-500">
+            © 2024 AquaWash Premium Car Care. All rights reserved.
+          </p>
+          <div class="flex gap-5 items-center">
+            <p class="text-gray-500 hover:text-blue-400">Privacy Policy</p>
+            <p class="text-gray-500 hover:text-blue-400">Terms of Service</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
