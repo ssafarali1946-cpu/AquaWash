@@ -41,7 +41,7 @@
         </li>
         <li>
           <a
-            class="text-blue-400 hover:text-white font-bold animate-pulse"
+            class="text-blue-400 hover:text-white font-bold"
             href="./index3.html"
             >Pricing</a
           >
@@ -69,7 +69,7 @@
         </li>
         <li>
           <a
-            class="text-blue-400 hover:text-white font-bold"
+            class="text-blue-400 hover:text-white font-bold animate-pulse"
             href="./index7.html"
             >About</a
           >
@@ -182,274 +182,241 @@
       closeBtn.addEventListener("click", closeMenu);
       overlay.addEventListener("click", closeMenu);
     </script>
-
     <section>
-      <div class="pt-30 sm:pt-40 pl-5 sm:pl-20 pr-5">
-        <h1 class="pt-2 text-4xl sm:text-6xl font-bold text-white">
-          Reserve Your Sparkle
+      <div class="pt-80">
+        <h1
+          class="text-5xl text-white font-bold text-center justify-center flex"
+        >
+          The Liquid Gold Standard
         </h1>
-
-        <p class="text-gray-400 pt-5 text-sm sm:text-base leading-7">
-          Select your preferred service and time. Experience the next level of
-          automotive
-          <br />
-          care with our premium hydro-dynamic wash systems.
+        <p class="pt-5 text-gray-400 text-center justify-center flex">
+          AquaWash was born from a singular vision: to redefine the automotive
+          care <br />
+          experience through hydrodynamic precision and premium sustainable
+          technology.
         </p>
       </div>
     </section>
-    <section class="px-4 sm:pl-10 pt-10">
-      <div class="flex justify-center p- gap-10 max-lg:flex-col">
-        <div class="py-10 px-2 sm:px-5  space-y-8 w-full">
-          <div
-            class="bg-[#0d233b] rounded-2xl border-2 border-[#1b3656] p-6 w-full lg:w-[880px]"
-          >
-            <h2 class="text-2xl font-bold pb-6 flex gap-2 text-blue-400">
-              <img src="./imeges/car-front.svg" alt="" />
-              1. Vehicle Details
-            </h2>
+    <section class="py-70 flex justify-center">
+      <div class="w-350 flex px-6">
+        <div class="grid md:grid-cols-2 gap-10 justify-center items-center">
+          <div class="bg-[#102849] p-10 rounded-2xl shadow-lg">
+            <h2 class="text-4xl font-bold text-blue-400 mb-6">Our Mission</h2>
 
-            <div class="flex gap-5 max-sm:flex-col">
-              <div class="w-full">
-                <label class="text-gray-400"> MAKE & MODEL </label>
+            <p class="text-gray-300 leading-8">
+              We don't just wash cars; we preserve engineering marvels. Our
+              mission is to provide the world's most sophisticated vehicle
+              purification system, utilizing 70% less water than traditional
+              methods while delivering a finish that exceeds factory showroom
+              standards.
+            </p>
 
-                <input
-                  type="text"
-                  placeholder="e.g. Tesla Model S"
-                  class="w-full mt-2 bg-[#132d49] border-2 border-[#26496c] rounded-xl h-12 pl-4 focus:border-cyan-400"
-                />
+            <div class="flex gap-8 mt-8">
+              <div class="flex items-center gap-2 text-white">
+                <span class="text-cyan-400"></span>
+                <span>Eco-Conscious</span>
               </div>
 
-              <div class="w-full">
-                <label class="text-gray-400"> VEHICLE TYPE </label>
-
-                <select
-                  class="w-full mt-2 bg-[#132d49] border-2 text-blue-400 border-[#26496c] rounded-xl h-12 pl-4"
-                >
-                  <option>Sedan / Coupe</option>
-                  <option>SUV</option>
-                  <option>Truck</option>
-                  <option>Van</option>
-                </select>
+              <div class="flex items-center gap-2 text-white">
+                <span class="text-cyan-400"></span>
+                <span>Precision Tech</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="bg-[#0d233b] rounded-2xl border border-[#1b3656] p-6 w-full lg:w-[880px]"
-          >
-            <h2 class="text-2xl font-bold mb-6 flex gap-2 text-blue-400">
-              <img src="./imeges/layers-2.svg" alt="" />
-              2. Select Service
-            </h2>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              <div
-                class="bg-[#223852] hover:border-cyan-400 border-2 rounded-2xl p-6 transition"
-              >
-                <img src="./imeges/waves-horizontal.svg" alt="" />
-
-                <h3 class="text-xl font-bold mt-5 text-white">Hydro Pure</h3>
-
-                <p class="text-gray-400 mt-2">
-                  Standard exterior wash with ionized water treatment.
-                </p>
-
-                <h4 class="text-cyan-400 text-2xl font-bold mt-6">$45</h4>
-              </div>
-
-              <div
-                class="relative bg-[#223852] border-2 border-cyan-400 rounded-2xl p-6"
-              >
-                <span
-                  class="absolute top-3 right-3 bg-cyan-300 text-black font-bold px-2 py-1 rounded-2xl"
-                >
-                  POPULAR
-                </span>
-
-                <img src="./imeges/wand-sparkles.svg" alt="" />
-
-                <h3 class="text-xl font-bold mt-5 text-white">Aqua Elite</h3>
-
-                <p class="text-gray-400 mt-2">
-                  Full interior & exterior deep clean with ceramic coat.
-                </p>
-
-                <h4 class="text-cyan-400 text-2xl font-bold mt-6">$85</h4>
-              </div>
-
-              <div
-                class="bg-[#223852] hover:border-cyan-400 border-2 rounded-2xl p-6"
-              >
-                <img src="./imeges/gem.svg" alt="" />
-
-                <h3 class="text-xl font-bold mt-5 text-white">Platinum</h3>
-
-                <p class="text-gray-400 mt-2">
-                  Concierge detailing including engine bay & leather prep.
-                </p>
-
-                <h4 class="text-cyan-400 text-2xl font-bold mt-6">$160</h4>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-[#0d233b] rounded-2xl border-2 border-[#1b3656] p-6 w-full lg:w-[880px]"
-          >
-            <h2 class="text-2xl font-bold mb-6 flex gap-2 text-blue-400">
-              <img src="./imeges/calendar-days.svg" alt="" />
-              3. Choose Time Slot
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <p class="text-gray-400 mb-4">Preferred Date</p>
-
-                <div class="flex gap-3 flex-wrap">
-                  <button class="bg-[#223852] rounded-xl w-10 h-10">12</button>
-
-                  <button class="bg-[#223852] rounded-xl w-10 h-10">13</button>
-
-                  <button class="bg-[#223852] rounded-xl w-10 h-10">14</button>
-
-                  <button
-                    class="bg-cyan-500 rounded-xl w-10 h-10 text-black font-bold"
-                  >
-                    15
-                  </button>
-
-                  <button class="bg-[#223852] rounded-xl w-10 h-10">16</button>
-
-                  <button class="bg-[#223852] rounded-xl w-10 h-10">17</button>
-                </div>
-              </div>
-
-              <div>
-                <p class="text-gray-400 mb-4">Available Slots</p>
-
-                <div class="flex gap-3 flex-wrap">
-                  <button
-                    class="bg-[#223852] rounded-xl text-center p-2 hover:bg-cyan-500 hover:text-black"
-                  >
-                    09:00 AM
-                  </button>
-
-                  <button
-                    class="bg-[#223852] rounded-xl text-center p-2 hover:bg-cyan-500 hover:text-black"
-                  >
-                    10:30 AM
-                  </button>
-
-                  <button
-                    class="bg-[#223852] rounded-xl text-center p-2 hover:bg-cyan-500 hover:text-black"
-                  >
-                    12:00 PM
-                  </button>
-                </div>
-
-                <div class="flex gap-3 pt-5 flex-wrap">
-                  <button
-                    class="bg-cyan-500 text-black rounded-xl text-center p-2 font-bold"
-                  >
-                    01:30 PM
-                  </button>
-
-                  <button
-                    class="bg-[#223852] rounded-xl text-center p-2 hover:bg-cyan-500 hover:text-black"
-                  >
-                    03:00 PM
-                  </button>
-
-                  <button
-                    class="bg-[#223852] rounded-xl text-center p-2 hover:bg-cyan-500 hover:text-black"
-                  >
-                    04:30 PM
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div>
+            <img
+              src="./imeges/image copy 33.png"
+              alt="Car Wash"
+              class="w-full rounded-2xl shadow-xl"
+            />
           </div>
         </div>
-
-        <!-- Booking Summary -->
-
-        <div class="pt-10 flex justify-center lg:block">
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1 class="text-4xl font-bold text-blue-400 mb-6 text-center">
+          Our Journey
+        </h1>
+      </div>
+      <div class="max-w-7xl mx-auto p-4 sm:p-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div
-            class="w-full max-w-[360px] bg-[#102544] rounded-2xl p-6 text-white shadow-2xl"
+            class="lg:col-span-2 bg-[#0D1E35] rounded-2xl p-6 flex flex-col justify-between min-h-[220px]"
           >
-            <h2 class="text-2xl font-bold mb-6">Booking Summary</h2>
+            <div>
+              <span class="text-sky-400 text-xl font-bold">2018</span>
 
-            <div class="flex justify-between">
-              <div>
-                <p class="text-gray-400 text-sm">Selected Service</p>
+              <h2 class="text-3xl text-white font-bold mt-2">The Genesis</h2>
 
-                <p class="text-cyan-400 mt-1">Aqua Elite Wash</p>
-              </div>
-
-              <span class="text-lg"> $85.00 </span>
+              <p class="text-gray-400 mt-5 leading-7">
+                Founded in a small garage in Fluid City, Elena Vance and Marcus
+                Chen developed the first 'Hyper-Mist' prototype, reducing water
+                usage by 40% while doubling cleaning efficiency.
+              </p>
             </div>
 
-            <div class="flex justify-between mt-6">
-              <div>
-                <p class="text-gray-400 text-sm">Vehicle</p>
+            <div class="flex justify-between items-center mt-8">
+              <span class="text-gray-500">Innovation Phase</span>
 
-                <p class="mt-1">Model S • Sedan</p>
-              </div>
-
-              <button class="text-gray-400 hover:text-white">
-                <img src="./imeges/pencil.svg" alt="" />
-              </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-sky-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 3v6l-4 7a2 2 0 002 3h10a2 2 0 002-3l-4-7V3"
+                />
+              </svg>
             </div>
+          </div>
 
-            <div class="flex justify-between mt-6">
-              <div>
-                <p class="text-gray-400">Schedule</p>
+          <div class="bg-[#0D1E35] rounded-2xl p-6 min-h-[220px]">
+            <span class="text-sky-400 text-xl font-bold">2021</span>
 
-                <p class="mt-1">Nov 15, 2024 · 01:30 PM</p>
-              </div>
+            <h2 class="text-3xl text-white font-bold mt-2">Going Global</h2>
 
-              <span class="text-gray-400">
-                <img src="./imeges/clock (1).svg" alt="" />
-              </span>
-            </div>
-
-            <div class="border-t my-6"></div>
-
-            <div class="flex justify-between gap-3">
-              <p class="text-2xl font-bold">Total</p>
-
-              <div>
-                <p class="text-3xl font-bold text-cyan-400">$85.00</p>
-
-                <p class="text-gray-400 text-sm">Tax included in total price</p>
-              </div>
-            </div>
-
-            <button
-              class="mt-8 w-full bg-blue-500 py-4 rounded-2xl text-white hover:scale-[1.02] transition"
-            >
-              Confirm Appointment
-            </button>
-
-            <div
-              class="flex justify-center items-center gap-2 text-gray-400 mt-5"
-            >
-              Secure encrypted checkout
-            </div>
-
-            <div class="mt-8">
-              <img
-                src="./imeges/image copy 10.png"
-                class="rounded-xl h-40 w-full"
-                alt=""
-              />
-            </div>
-
-            <p class="text-gray-300 mt-4">
-              "The ceramic coat in Aqua Elite provides up to 3 months of
-              hydrophobic protection."
+            <p class="text-gray-400 mt-5 leading-7">
+              Expansion into 12 major metropolitan areas, establishing AquaWash
+              as the premier choice for luxury vehicle owners.
             </p>
           </div>
+
+          <div class="bg-[#0D1E35] rounded-2xl p-6 min-h-[180px]">
+            <span class="text-sky-400 text-xl font-bold">2024</span>
+
+            <h2 class="text-3xl text-white font-bold mt-2">Zero-Impact</h2>
+
+            <p class="text-gray-400 mt-5 leading-7">
+              Launching our fully carbon-neutral facility model, powered
+              entirely by recycled solar energy and closed-loop water systems.
+            </p>
+          </div>
+
+          <div
+            class="lg:col-span-2 bg-[#0D1E35] rounded-2xl p-6 flex justify-between items-center min-h-[180px]"
+          >
+            <div class="max-w-xl">
+              <h2 class="text-3xl text-white font-bold">Future Horizon</h2>
+
+              <p class="text-gray-400 mt-5 leading-7">
+                Integrating AI-driven surface analysis to customize every wash
+                cycle based on your vehicle's specific ceramic coating
+                condition.
+              </p>
+            </div>
+
+            <div class="hidden sm:flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-24 h-24 text-sky-900"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3l1.8 3.6L18 10l-3 2.9.7 4.1L12 15l-3.7 2 .7-4.1L6 10l4.2-.4L12 5z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-5xl md:text-5xl text-sky-400 font-bold">
+          The Visionaries
+        </h2>
+
+        <p class="text-gray-400 mt-3">The minds behind the mist.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="./imeges/image copy 37.png"
+              class="w-full h-85 object-cover hover: duration-300"
+            />
+          </div>
+
+          <h3 class="text-3xl font-bold text-sky-400 mt-4">Elena Vance</h3>
+
+          <p class="uppercase tracking-widest text-gray-300">Founder & CEO</p>
+        </div>
+
+        <div class="text-center">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="./imeges/image copy 36.png"
+              class="w-full h-85 object-cover hover: duration-300"
+            />
+          </div>
+
+          <h3 class="text-3xl font-bold text-sky-400 mt-4">Marcus Chen</h3>
+
+          <p class="uppercase tracking-widest text-gray-300">
+            Chief Technology Officer
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="./imeges/image copy 35.png"
+              class="w-full h-85 object-cover hover: duration-300"
+            />
+          </div>
+
+          <h3 class="text-3xl font-bold text-sky-400 mt-4">Sarah Jenkins</h3>
+
+          <p class="uppercase tracking-widest text-gray-300">
+            Head of Operations
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="./imeges/image copy 34.png"
+              class="w-full h-85 object-cover hover: duration-300"
+            />
+          </div>
+
+          <h3 class="text-3xl font-bold text-sky-400 mt-4">David Thorne</h3>
+
+          <p class="uppercase tracking-widest text-gray-300">
+            Creative Director
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div
+        class="bg-[#0B1D39] border border-slate-700 rounded-2xl py-14 px-6 text-center"
+      >
+        <h2 class="text-3xl md:text-5xl font-bold text-white">
+          Ready for the AquaWash experience?
+        </h2>
+
+        <p
+          class="text-gray-400 mt-5 max-w-2xl mx-auto text-sm md:text-base leading-7"
+        >
+          Join the thousands of car enthusiasts who trust their most prized
+          possessions to our hydro-dynamic experts.
+        </p>
+
+        <button
+          class="mt-10 px-8 py-4 rounded-full bg-blue-500 from-cyan-400 to-sky-300 text-[#06203F] font-bold text-lg hover:scale-105 duration-300"
+        >
+          Schedule Your First Wash
+        </button>
       </div>
     </section>
     <footer class="bg-[#071B35] border-t border-slate-700">
@@ -536,7 +503,7 @@
             </p>
 
             <img
-              class="mt-6 rounded-2xl w-full max-w-[220px] opacity-60 hover:opacity-100 duration-300"
+              class="mt-6 rounded-2xl w-full opacity-60 hover:opacity-100 duration-300"
               src="./imeges/image copy 3.png"
               alt=""
             />

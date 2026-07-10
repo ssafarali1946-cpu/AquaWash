@@ -24,7 +24,7 @@
       <ul class="hidden md:flex gap-8">
         <li>
           <a
-            class="text-blue-400 hover:text-white font-bold"
+            class="text-blue-400 hover:text-white font-bold "
             href="./index.html"
             >Home</a
           >
@@ -47,19 +47,41 @@
           >
         </li>
         <li>
-          <a class="text-blue-400 hover:text-white font-bold" href="./index4.html"
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index4.html"
             >Booking</a
           >
         </li>
-         <li>
-          <a class="text-blue-400 hover:text-white font-bold" href="./index5.html">Registration</a>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index5.html"
+            >Registration</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index6.html"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index7.html"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-400 hover:text-white font-bold"
+            href="./index8.html"
+            >Contact</a
+          >
         </li>
       </ul>
-      <button
-        class="hidden md:block font-bold text-blue-200 border-2 border-blue-500 px-5 py-2 rounded-3xl bg-blue-500 hover:bg-blue-800 hover:text-white transition"
-      >
-        BOOK NOW
-      </button>
 
       <button id="menuBtn" class="md:hidden">
         <img src="./imeges/menu (1).svg" class="w-8" alt="" />
@@ -117,7 +139,7 @@
 
         <a
           class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
-          href="./index4.html"
+          href="/index4.html"
         >
           ℹ About
         </a>
@@ -125,17 +147,21 @@
           class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
           href="/index4.html"
           href=""
-          >Registration</a
+          >👤 Registration</a
         >
-      </ul>
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index7.html"
+          >About</a
+        >
 
-      <div class="px-6 mt-6">
-        <button
-          class="w-full py-4 rounded-full bg-blue-500 from-cyan-500 to-blue-600 text-white font-bold hover:scale-105 transition"
+        <a
+          class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300"
+          href="./index6.html"
+          >Login</a
         >
-          BOOK NOW
-        </button>
-      </div>
+        <a class="p-4 rounded-2xl bg-white/5 text-white font-bold hover:bg-cyan-500 hover:translate-x-2 duration-300" href="./index8.html">Contact</a>
+      </ul>
     </div>
     <script>
       const menuBtn = document.getElementById("menuBtn");
@@ -157,7 +183,7 @@
       overlay.addEventListener("click", closeMenu);
     </script>
     <section>
-      <div class="pt-30 text-center">
+      <div class="pt-30 text-center max-sm:p-5">
         <h1 class="text-blue-400 text-5xl font-bold">
           Precision in Every Drop
         </h1>
@@ -169,7 +195,7 @@
       </div>
     </section>
     <section class="py-10 px-5 justify-center">
-      <div class="w-full grid grid-cols-4 gap-5">
+      <div class="w-full grid grid-cols-4 gap-5 max-sm:grid-cols-2">
         <div
           class="col-span-2 row-span-2 relative h-160 overflow-hidden rounded-2xl"
         >
@@ -215,8 +241,8 @@
           />
         </div>
       </div>
-      <div class="pt-5 w-full grid grid-cols-2 gap-5">
-        <div class="relative h-100 overflow-hidden rounded-2xl w-185">
+      <div class="pt-5 w-full grid grid-cols-2 gap-5 max-sm:grid-cols-1">
+        <div class="relative h-100 overflow-hidden rounded-2xl w-185 max-sm:w-100">
           <img
             src="imeges/image copy 16.png"
             class="w-full h-full object-cover"
@@ -230,7 +256,7 @@
             </h2>
           </div>
         </div>
-        <div class="flex gap-4">
+        <div class="flex gap-4 max-sm:flex-col">
           <div class="h-100 rounded-2xl overflow-hidden">
             <img
               src="imeges/image copy 17.png"
@@ -245,7 +271,7 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-4 pt-5">
+      <div class="flex gap-4 pt-5 max-sm:flex-col">
         <div class="h-90 rounded-2xl overflow-hidden">
           <img
             src="imeges/image copy 19.png"
@@ -271,7 +297,7 @@
           />
         </div>
       </div>
-      <div class="flex gap-4 pt-5">
+      <div class="flex gap-4 pt-5 max-sm:flex-col">
         <div class="h-90 rounded-2xl overflow-hidden">
           <img
             src="imeges/image copy 23.png"
@@ -297,7 +323,7 @@
           />
         </div>
       </div>
-      <div class="flex gap-4 pt-5">
+      <div class="flex gap-4 pt-5 max-sm:flex-col">
         <div class="h-90 rounded-2xl overflow-hidden">
           <img
             src="imeges/image copy 27.png"
@@ -333,67 +359,112 @@
         </button>
       </div>
     </section>
-     <footer>
-      <div class="bg-blue-950 w-full h-95">
-        <div class="flex gap-50 justify-center pt-30 max-sm:flex-wrap">
+    <footer class="bg-[#071B35] border-t border-slate-700">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-3">
               <img class="w-10" src="./imeges/droplet.svg" alt="" />
-              <h1 class="text-blue-500 text-4xl font-bold">AquaWash</h1>
+              <h1 class="text-3xl font-bold text-cyan-400">AquaWash</h1>
             </div>
-            <p class="text-gray-500 pt-4">
-              Setting the standard for high-end vehicle <br />
-              maintenance through innovation and <br />
-              dedication.
+
+            <p class="text-gray-400 mt-5 leading-7">
+              Setting the standard for high-end vehicle maintenance through
+              innovation and dedication.
             </p>
-            <div class="flex gap-5 items-center pt-5">
-              <img src="./imeges/globe.svg" alt="" />
-              <img src="./imeges/share-2.svg" alt="" />
+
+            <div class="flex gap-4 mt-6 max-sm:flex-wrap">
+              <img
+                class="cursor-pointer hover:scale-110 duration-300"
+                src="./imeges/globe.svg"
+                alt=""
+              />
+              <img
+                class="cursor-pointer hover:scale-110 duration-300"
+                src="./imeges/share-2.svg"
+                alt=""
+              />
             </div>
           </div>
+
           <div>
-            <div>
-              <h1 class="font-bold text-white text-2xl">CONNECT</h1>
-              <p class="text-gray-500"><a href="https://ru-ru.facebook.com/AquawashLtd">Facebook</a></p>
-              <p class="text-gray-500"><a href="https://www.instagram.com/aquawashltd/">Instagram</a></p>
-              <p class="text-gray-500"><a href="https://x.com/AquaSecTeam">Twitter</a></p>
+            <h2 class="text-2xl font-bold text-white mb-5">CONNECT</h2>
+
+            <div class="space-y-3">
+              <a
+                class="block text-gray-400 hover:text-cyan-400 duration-300"
+                href="https://ru-ru.facebook.com/AquawashLtd"
+              >
+                Facebook
+              </a>
+
+              <a
+                class="block text-gray-400 hover:text-cyan-400 duration-300"
+                href="https://www.instagram.com/aquawashltd/"
+              >
+                Instagram
+              </a>
+
+              <a
+                class="block text-gray-400 hover:text-cyan-400 duration-300"
+                href="https://x.com/AquaSecTeam"
+              >
+                Twitter
+              </a>
             </div>
           </div>
+
           <div>
-            <div>
-              <h1 class="font-bold text-white text-2xl">SUPPORT</h1>
-              <p class="text-gray-500">
-                <a href="telPhone:+1(555)AQUA-WSH">Phone: +1 (555) AQUA-WSH</a>
-              </p>
-              <p class="text-gray-500">
-                <a href="">Email: hello@aquawash.com</a>
-              </p>
+            <h2 class="text-2xl font-bold text-white mb-5">SUPPORT</h2>
+
+            <div class="space-y-3">
+              <a
+                class="block text-gray-400 hover:text-cyan-400 duration-300"
+                href="tel:+15552782974"
+              >
+                +1 (555) AQUA-WSH
+              </a>
+
+              <a
+                class="block text-gray-400 hover:text-cyan-400 duration-300"
+                href="mailto:hello@aquawash.com"
+              >
+                hello@aquawash.com
+              </a>
             </div>
           </div>
+
           <div>
-            <div>
-              <h1 class="font-bold text-white text-2xl">Location</h1>
-              <p class="text-gray-500">
-                123 Hydro Lane, Fluid City <br />
-                State of Flow, 90210
-              </p>
-              <div class="pt-5">
-                <img
-                  class="w-50 rounded-2xl opacity-30 hover:opacity-100"
-                  src="./imeges/image copy 3.png"
-                  alt=""
-                />
-              </div>
-            </div>
+            <h2 class="text-2xl font-bold text-white mb-5">Location</h2>
+
+            <p class="text-gray-400 leading-7">
+              123 Hydro Lane, Fluid City <br />
+              State of Flow, 90210
+            </p>
+
+            <img
+              class="mt-6 rounded-2xl w-full opacity-60 hover:opacity-100 duration-300"
+              src="./imeges/image copy 3.png"
+              alt=""
+            />
           </div>
         </div>
-        <div class="flex gap-200 justify-center pt-5">
-          <p class="text-gray-500">
+
+        <div
+          class="border-t border-slate-700 mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-5"
+        >
+          <p class="text-gray-500 text-center md:text-left">
             © 2024 AquaWash Premium Car Care. All rights reserved.
           </p>
-          <div class="flex gap-5 items-center">
-            <p class="text-gray-500 hover:text-blue-400">Privacy Policy</p>
-            <p class="text-gray-500 hover:text-blue-400">Terms of Service</p>
+
+          <div class="flex gap-6">
+            <a href="#" class="text-gray-500 hover:text-cyan-400 duration-300">
+              Privacy Policy
+            </a>
+
+            <a href="#" class="text-gray-500 hover:text-cyan-400 duration-300">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>
